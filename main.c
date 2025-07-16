@@ -1,5 +1,5 @@
-#include <stdio.h> // Biblioteca padrão da linguagem C
-#include <stdlib.h> // Biblioteca para gerar números aleatórios (rand())
+#include <stdio.h> // Biblioteca padrÃ£o da linguagem C
+#include <stdlib.h> // Biblioteca para gerar nÃºmeros aleatÃ³rios (rand())
 #include <Windows.h> // Biblioteca para usar o Sleep() em milissegundos (1000 para aguradar 1 segundo)
 #include <time.h>
 
@@ -32,7 +32,7 @@ void game()
 
 		else
 		{
-			printf("\nPARABENS CONSEGUIU ACERTAR COM %i!!\n", tentativa);
+			printf("\nPARABENS CONSEGUIU ACERTAR COM %i TENTATIVAS!!\n", tentativa);
 
 			printf("\nGostaria de jogar novamente? Digite 's' para sim ou 'n' para nao: ");
 			do
@@ -47,8 +47,9 @@ void game()
 				}
 				else if (restart == 'n')
 				{ 
-					printf("\nSem problemas!! Fique a vontade para jogar novamente");
-					return;
+					printf("\nSem problemas!! Fique a vontade para jogar futuramente.\n");
+					Sleep(2000);
+					exit(0);
 				}
 				else
 				{
@@ -78,8 +79,9 @@ void game()
 				}
 				else if (restart == 'n')
 				{
-					printf("\nSem problemas!! Fique a vontade para jogar novamente\n");
-					return;
+					printf("\nSem problemas!! Fique a vontade para jogar futuramente.\n");
+					Sleep(2000);
+					exit(0);
 				}
 				else
 				{
